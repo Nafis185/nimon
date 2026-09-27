@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #f7f3ed;
+  --bg-secondary: #eee7dc;
+
+  --text-primary: #241b1b;
+  --text-secondary: #6f6260;
+  --text-muted: #968987;
+
+  --accent: #b88a5a;
+  --accent-light: #d6b58b;
+
+  --border: rgba(36, 27, 27, 0.12);
+  --glass: rgba(255, 255, 255, 0.55);
+
+  font-family: "DM Sans", sans-serif;
+  color: var(--text-primary);
+  background: var(--bg-primary);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+button,
+a {
+  font: inherit;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+::selection {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* =========================================
+   DARK THEME
+========================================= */
+
+.dark {
+  --bg-primary: #171112;
+  --bg-secondary: #21191a;
+
+  --text-primary: #f5eee6;
+  --text-secondary: #b9aaa4;
+  --text-muted: #847773;
+
+  --accent: #d1a46f;
+  --accent-light: #e2c49e;
+
+  --border: rgba(255, 255, 255, 0.12);
+  --glass: rgba(255, 255, 255, 0.06);
+}
+
+/* =========================================
+   TYPOGRAPHY
+========================================= */
+
+.font-display {
+  font-family: "Cormorant Garamond", serif;
+}
+
+.font-body {
+  font-family: "DM Sans", sans-serif;
+}
+
+/* =========================================
+   SCROLLBAR
+========================================= */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 999px;
+}
+
+/* =========================================
+   RESPONSIVE CONTAINER
+========================================= */
+
+.container-premium {
+  width: min(100% - 40px, 1280px);
+  margin-inline: auto;
+}
+
+@media (max-width: 768px) {
+  .container-premium {
+    width: min(100% - 28px, 1280px);
+  }
+}
+
+@media (max-width: 480px) {
+  .container-premium {
+    width: min(100% - 22px, 1280px);
+  }
+}
