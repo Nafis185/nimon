@@ -66,13 +66,14 @@ function Navbar({ theme, onToggleTheme }) {
           className="navbar-brand"
           onClick={closeMenu}
         >
-          <span className="navbar-brand-mark">
-            W
-          </span>
+          <img
+            src="/nimon-icon.png"
+            alt="NIMON"
+            className="navbar-brand-icon"
+          />
 
           <span className="navbar-brand-text">
-            Wedding
-            <span>Studio</span>
+            NIMON
           </span>
         </a>
 
