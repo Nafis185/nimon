@@ -5,11 +5,12 @@ import { ArrowUpRight } from "lucide-react";
 const invitations = [
   {
     id: 1,
-    couple: "Asif & Sadia",
+    couple: "Nasimur & Tanzina",
     type: "Wedding Invitation",
     date: "Wedding Invitation",
     // Asif & Sadia — GitHub Pages Live Demo
-    link: "https://nafis185.github.io/nimon-demos/asif-sadia/",
+    link: "https://nafis185.github.io/nimon-demos/tanzina-anok/anok%20tanzina.html",
+   
   },
   {
     id: 2,
@@ -21,11 +22,11 @@ const invitations = [
   },
   {
     id: 3,
-    couple: "Anok & Tanzina",
+    couple: "Asif & Sadia",
     type: "Wedding Invitation",
     date: "Wedding Invitation",
     // Anok & Tanzina — GitHub Pages Live Demo
-    link: "https://nafis185.github.io/nimon-demos/anok%20tanzina.html",
+    link: "https://nafis185.github.io/nimon-demos/asif-sadia/",
   },
 
   // ========================================
